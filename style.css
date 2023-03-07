@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/content/background.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.letter h4 {
+    font-size: 30px;
+}
+
+#AiAlert {
+    display: none;
+    margin: 0px 0px;
+}
+
+.letter {
+
+    background-image: url("images/content/letterbg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#letterbutton button:hover {
+    background-color: #A020F0 !important;
+    color: white !important;
+}
+
+
+
+
+#BirthdayTitle {
+    animation-name: Btitle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Btitle {
+    from {
+        color: red;
+    }
+
+    to {
+        color: orange;
+    }
+}
+
+#khoma {
+    font-size: 30px;
+}
+
+#endtext {
+    display: block;
+}
+
+#topbtn {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+
+    .letter h4 {
+        font-size: 19px;
+    }
+
+    .demo {
+        margin: -20% 0;
+    }
+
+    #AiAlert {
+        display: block;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url("images/content/smallbg.gif");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .letter h4 {
+        font-size: 13px;
+        margin: 0 -20px;
+    }
+
+    #AiAlert {
+        display: block;
+    }
+
+    #khoma {
+        font-size: 15px;
+    }
+
+    #endtext {
+        display: none;
+    }
+
+    #topbtn {
+        display: block;
+    }
+
+}
